@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Settings</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <div class="flex h-screen">
+    <div class="bg-gray-800 text-white w-64 p-5 space-y-6">
+      <div>
+        <h2 class="text-2xl font-bold">User Dashboard</h2>
+      </div>
+      <nav class="space-y-2">
+        <a href="index.html" class="block py-2 px-4 hover:bg-gray-700 rounded">Dashboard</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Profile</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Settings</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Activity</a>
+      </nav>
+    </div>
+
+    <div class="flex-1 p-6">
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold text-gray-900">Settings</h1>
+        <div class="space-x-4">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Save Changes</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-semibold mb-4">Profile Settings</h2>
+          <form action="#">
+            <div class="space-y-4">
+              <div>
+                <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                <input type="text" id="username" name="username" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md"  required>
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 >
+              <div>
+                <label for="bio" class="block text-sm font-medium text-gray-700">Bio</label>
+                <textarea id="bio" name="bio" rows="4" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md" placeholder="Tell us about yourself..."></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-semibold mb-4">Change Password</h2>
+          <form action="#">
+            <div class="space-y-4">
+              <div>
+                <label for="current-password" class="block text-sm font-medium text-gray-700">Current Password</label>
+                <input type="password" id="current-password" name="current-password" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md" required>
+              </div>
+              <div>
+                <label for="new-password" class="block text-sm font-medium text-gray-700">New Password</label>
+                <input type="password" id="new-password" name="new-password" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md" required>
+              </div>
+              <div>
+                <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md" required>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-lg mt-8">
+        <h2 class="text-2xl font-semibold mb-4">Notification Settings</h2>
+        <form action="#">
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <input type="checkbox" id="email-notifications" class="h-4 w-4 text-blue-600 border-gray-300 md" rounded focus:ring-blue-500">
+              <label for="email-notifications" class="ml-2 text-sm font-medium text-gray-700">Enable Email Notifications</label>
+            </div>
+            <div class="flex items-center">
+              <input type="checkbox" id="sms-notifications" class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+              <label for="sms-notifications" class="ml-2 text-sm font-medium text-gray-700">Enable SMS Notifications</label>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

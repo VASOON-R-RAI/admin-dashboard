@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+ 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+  
+  <div class="flex h-screen">
+
+   
+    <div class="bg-gray-800 text-white w-64 p-5 space-y-6">
+      <div>
+        <h2 class="text-2xl font-bold">User Dashboard</h2>
+      </div>
+      
+     
+      <nav class="space-y-2">
+        <a href="index.html" class="block py-2 px-4 hover:bg-gray-700 rounded">Dashboard</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Profile</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Settings</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Activity</a>
+      </nav>
+    </div>
+
+   
+    <div class="flex-1 p-6">
+
+     
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold text-gray-900">Welcome, vasoon</h1>
+        <div class="space-x-4">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Logout</button>
+          <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded">Edit Profile</button>
+        </div>
+      </div>
+
+     
+      <div class="bg-white p-6 rounded-lg shadow-lg mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Your Profile</h2>
+        <div class="flex items-center space-x-6">
+          <img class="w-32 h-32 rounded-full border-2 border-gray-300" src="https://via.placeholder.com/150" alt="User Profile Picture">
+          <div>
+            <p class="text-xl font-semibold">vasoon rai</p>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-semibold mb-4">Recent Activity</h3>
+        <ul class="space-y-4">
+          <li class="flex justify-between">
+            <span>Updated profile information</span>
+            <span class="text-gray-500 text-sm">2 hours ago</span>
+          </li>
+          <li class="flex justify-between">
+            <span>Completed a survey</span>
+            <span class="text-gray-500 text-sm">1 day ago</span>
+          </li>
+          <li class="flex justify-between">
+            <span>Changed password</span>
+            <span class="text-gray-500 text-sm">1 week ago</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

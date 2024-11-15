@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+
+ 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+  
+  <div class="flex h-screen">
+
+    
+    <div class="bg-gray-800 text-white w-64 p-5 space-y-6">
+      <div>
+        <h2 class="text-2xl font-bold">Dashboard</h2>
+      </div>
+      
+     
+      <nav class="space-y-2">
+        <a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Dashboard</a>
+        <a href="user.html" class="block py-2 px-4 hover:bg-gray-700 rounded">Users</a>
+        <a href="setting.html" class="block py-2 px-4 hover:bg-gray-700 rounded">Settings</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Reports</a>
+      </nav>
+    </div>
+
+    
+    <div class="flex-1 p-6">
+
+     
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold text-gray-900">Welcome to the Admin Dashboard</h1>
+        <div class="space-x-4">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Logout</button>
+          <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded">Profile</button>
+        </div>
+      </div>
+
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+       
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Total Users</h3>
+          <p class="text-3xl font-bold text-gray-800 mt-2">1,245</p>
+        </div>
+
+     
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">New Orders</h3>
+          <p class="text-3xl font-bold text-gray-800 mt-2">342</p>
+        </div>
+
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Pending Requests</h3>
+          <p class="text-3xl font-bold text-gray-800 mt-2">18</p>
+        </div>
+
+      </div>
+
+     
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-semibold mb-4">Recent Activity</h3>
+        <ul class="space-y-4">
+          <li class="flex justify-between">
+            <span>User John Doe signed in</span>
+            <span class="text-gray-500 text-sm">2 hours ago</span>
+          </li>
+          <li class="flex justify-between">
+            <span>New order placed by Alice</span>
+            <span class="text-gray-500 text-sm">4 hours ago</span>
+          </li>
+          <li class="flex justify-between">
+            <span>System maintenance scheduled</span>
+            <span class="text-gray-500 text-sm">1 day ago</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
